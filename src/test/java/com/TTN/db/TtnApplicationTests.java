@@ -104,7 +104,7 @@ class TtnApplicationTests {
 	//(9) Create and use finder to find Employees starting with A character
 	@Test
 	public void findByNameLike(){
-		List<Employee> employees = employeeRepo.findByNameLike("%A%");
+		List<Employee> employees = employeeRepo.findByNameLike("A%");
 		employees.forEach(e -> System.out.println(e.getName()));
 	}
 
